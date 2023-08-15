@@ -16,6 +16,9 @@
 		D3C4FAD32A8C0FE500E596F3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3C4FAD22A8C0FE500E596F3 /* FirebaseFirestoreSwift */; };
 		D3C4FAD52A8C11EF00E596F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */; };
 		D3C4FAD72A8C1DF100E596F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */; };
+		D3C4FADA2A8C290700E596F3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAD92A8C290700E596F3 /* AuthManager.swift */; };
+		D3C4FADF2A8C2B8000E596F3 /* Closure+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FADE2A8C2B8000E596F3 /* Closure+Typealias.swift */; };
+		D3C4FAE12A8C2D9200E596F3 /* AppUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAE02A8C2D9200E596F3 /* AppUserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		D3C4FABE2A8B4B4500E596F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3C4FAD92A8C290700E596F3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D3C4FADB2A8C297100E596F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3C4FADE2A8C2B8000E596F3 /* Closure+Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Closure+Typealias.swift"; sourceTree = "<group>"; };
+		D3C4FAE02A8C2D9200E596F3 /* AppUserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +68,12 @@
 		D3C4FAB62A8B4B4200E596F3 /* Bingo */ = {
 			isa = PBXGroup;
 			children = (
+				D3C4FADC2A8C2B5400E596F3 /* Core */,
+				D3C4FAD82A8C28E600E596F3 /* Auth */,
 				D3C4FAB72A8B4B4200E596F3 /* BingoApp.swift */,
 				D3C4FAB92A8B4B4200E596F3 /* ContentView.swift */,
 				D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */,
+				D3C4FADB2A8C297100E596F3 /* Info.plist */,
 				D3C4FABB2A8B4B4500E596F3 /* Assets.xcassets */,
 				D3C4FABD2A8B4B4500E596F3 /* Preview Content */,
 				D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */,
@@ -77,6 +87,23 @@
 				D3C4FABE2A8B4B4500E596F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3C4FAD82A8C28E600E596F3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D3C4FAD92A8C290700E596F3 /* AuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D3C4FADC2A8C2B5400E596F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D3C4FADE2A8C2B8000E596F3 /* Closure+Typealias.swift */,
+				D3C4FAE02A8C2D9200E596F3 /* AppUserDefaultsKeys.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C4FAE12A8C2D9200E596F3 /* AppUserDefaultsKeys.swift in Sources */,
 				D3C4FAD72A8C1DF100E596F3 /* AppDelegate.swift in Sources */,
+				D3C4FADA2A8C290700E596F3 /* AuthManager.swift in Sources */,
 				D3C4FABA2A8B4B4200E596F3 /* ContentView.swift in Sources */,
+				D3C4FADF2A8C2B8000E596F3 /* Closure+Typealias.swift in Sources */,
 				D3C4FAB82A8B4B4200E596F3 /* BingoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +322,7 @@
 				DEVELOPMENT_TEAM = L39SDL9LW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Bingo;
+				INFOPLIST_FILE = Bingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,7 +351,7 @@
 				DEVELOPMENT_TEAM = L39SDL9LW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Bingo;
+				INFOPLIST_FILE = Bingo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
