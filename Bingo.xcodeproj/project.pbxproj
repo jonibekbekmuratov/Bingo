@@ -11,6 +11,11 @@
 		D3C4FABA2A8B4B4200E596F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAB92A8B4B4200E596F3 /* ContentView.swift */; };
 		D3C4FABC2A8B4B4500E596F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C4FABB2A8B4B4500E596F3 /* Assets.xcassets */; };
 		D3C4FABF2A8B4B4500E596F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C4FABE2A8B4B4500E596F3 /* Preview Assets.xcassets */; };
+		D3C4FACF2A8C0FE500E596F3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3C4FACE2A8C0FE500E596F3 /* FirebaseAuth */; };
+		D3C4FAD12A8C0FE500E596F3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D3C4FAD02A8C0FE500E596F3 /* FirebaseFirestore */; };
+		D3C4FAD32A8C0FE500E596F3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3C4FAD22A8C0FE500E596F3 /* FirebaseFirestoreSwift */; };
+		D3C4FAD52A8C11EF00E596F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */; };
+		D3C4FAD72A8C1DF100E596F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,8 @@
 		D3C4FAB92A8B4B4200E596F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3C4FABB2A8B4B4500E596F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C4FABE2A8B4B4500E596F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C4FACF2A8C0FE500E596F3 /* FirebaseAuth in Frameworks */,
+				D3C4FAD12A8C0FE500E596F3 /* FirebaseFirestore in Frameworks */,
+				D3C4FAD32A8C0FE500E596F3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +63,10 @@
 			children = (
 				D3C4FAB72A8B4B4200E596F3 /* BingoApp.swift */,
 				D3C4FAB92A8B4B4200E596F3 /* ContentView.swift */,
+				D3C4FAD42A8C11EE00E596F3 /* GoogleService-Info.plist */,
 				D3C4FABB2A8B4B4500E596F3 /* Assets.xcassets */,
 				D3C4FABD2A8B4B4500E596F3 /* Preview Content */,
+				D3C4FAD62A8C1DF100E596F3 /* AppDelegate.swift */,
 			);
 			path = Bingo;
 			sourceTree = "<group>";
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = Bingo;
+			packageProductDependencies = (
+				D3C4FACE2A8C0FE500E596F3 /* FirebaseAuth */,
+				D3C4FAD02A8C0FE500E596F3 /* FirebaseFirestore */,
+				D3C4FAD22A8C0FE500E596F3 /* FirebaseFirestoreSwift */,
+			);
 			productName = Bingo;
 			productReference = D3C4FAB42A8B4B4200E596F3 /* Bingo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = D3C4FAAB2A8B4B4200E596F3;
+			packageReferences = (
+				D3C4FACD2A8C0FE500E596F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D3C4FAB52A8B4B4200E596F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +147,7 @@
 			files = (
 				D3C4FABF2A8B4B4500E596F3 /* Preview Assets.xcassets in Resources */,
 				D3C4FABC2A8B4B4500E596F3 /* Assets.xcassets in Resources */,
+				D3C4FAD52A8C11EF00E596F3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C4FAD72A8C1DF100E596F3 /* AppDelegate.swift in Sources */,
 				D3C4FABA2A8B4B4200E596F3 /* ContentView.swift in Sources */,
 				D3C4FAB82A8B4B4200E596F3 /* BingoApp.swift in Sources */,
 			);
@@ -195,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,11 +292,11 @@
 				DEVELOPMENT_TEAM = L39SDL9LW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bingo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +321,11 @@
 				DEVELOPMENT_TEAM = L39SDL9LW6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Bingo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +361,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3C4FACD2A8C0FE500E596F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3C4FACE2A8C0FE500E596F3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3C4FACD2A8C0FE500E596F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D3C4FAD02A8C0FE500E596F3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3C4FACD2A8C0FE500E596F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D3C4FAD22A8C0FE500E596F3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3C4FACD2A8C0FE500E596F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3C4FAAC2A8B4B4200E596F3 /* Project object */;
 }
