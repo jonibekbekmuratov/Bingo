@@ -9,11 +9,19 @@ import FirebaseAuth
 
 final class AuthManager {
     // Singleton
+    // TODO: Using singleton is bad, try another way
     static let shared = AuthManager()
     
     private init() {}
     
-    private let auth = Auth.auth()
+    // TODO: Should be configured
+    private let auth: Auth = {
+        let auth = Auth.auth()
+        auth.languageCode = "ru"
+        return auth
+    }()
+    
+    // TODO: SHould be injected
     private let provider = PhoneAuthProvider.provider()
     
     func startAuth(phoneNumber: String, completion: @escaping BoolClosure) {

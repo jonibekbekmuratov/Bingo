@@ -19,6 +19,8 @@
 		D3C4FADA2A8C290700E596F3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAD92A8C290700E596F3 /* AuthManager.swift */; };
 		D3C4FADF2A8C2B8000E596F3 /* Closure+Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FADE2A8C2B8000E596F3 /* Closure+Typealias.swift */; };
 		D3C4FAE12A8C2D9200E596F3 /* AppUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAE02A8C2D9200E596F3 /* AppUserDefaultsKeys.swift */; };
+		D3C4FAE32A8C336600E596F3 /* PhoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAE22A8C336600E596F3 /* PhoneAuthView.swift */; };
+		D3C4FAE52A8C3EBD00E596F3 /* SmsAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C4FAE42A8C3EBD00E596F3 /* SmsAuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D3C4FADB2A8C297100E596F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D3C4FADE2A8C2B8000E596F3 /* Closure+Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Closure+Typealias.swift"; sourceTree = "<group>"; };
 		D3C4FAE02A8C2D9200E596F3 /* AppUserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeys.swift; sourceTree = "<group>"; };
+		D3C4FAE22A8C336600E596F3 /* PhoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthView.swift; sourceTree = "<group>"; };
+		D3C4FAE42A8C3EBD00E596F3 /* SmsAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsAuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				D3C4FAD92A8C290700E596F3 /* AuthManager.swift */,
+				D3C4FAE22A8C336600E596F3 /* PhoneAuthView.swift */,
+				D3C4FAE42A8C3EBD00E596F3 /* SmsAuthView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -189,7 +195,9 @@
 				D3C4FAD72A8C1DF100E596F3 /* AppDelegate.swift in Sources */,
 				D3C4FADA2A8C290700E596F3 /* AuthManager.swift in Sources */,
 				D3C4FABA2A8B4B4200E596F3 /* ContentView.swift in Sources */,
+				D3C4FAE52A8C3EBD00E596F3 /* SmsAuthView.swift in Sources */,
 				D3C4FADF2A8C2B8000E596F3 /* Closure+Typealias.swift in Sources */,
+				D3C4FAE32A8C336600E596F3 /* PhoneAuthView.swift in Sources */,
 				D3C4FAB82A8B4B4200E596F3 /* BingoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -355,6 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,10 +9,13 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>app-1-566685885089-ios-afcecde99dd6e731d4c6e0
-</string>
+				<string>com.googleusercontent.apps.566685885089-iresu4tf6pe9cgaf3fhbqfaf6j02qp5q</string>
 			</array>
 		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>

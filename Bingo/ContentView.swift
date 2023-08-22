@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
     var body: some View {
@@ -14,8 +15,31 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button {
+                signOut()
+            } label: {
+                Text("Sign Out")
+                    .foregroundColor(.yellow)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding()
+                    .background {
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(Color.black)
+                    }
+            }
+
         }
         .padding()
+    }
+    
+    func signOut() {
+        let auth = Auth.auth()
+        do {
+            try auth.signOut()
+        } catch {
+            print("Error signing out: \(error.localizedDescription)")
+        }
     }
 }
 

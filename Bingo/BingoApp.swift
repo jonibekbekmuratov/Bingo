@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 @main
 struct BingoApp: App {
@@ -13,7 +14,11 @@ struct BingoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if Auth.auth().currentUser == nil {
+                PhoneAuthView()
+            } else {
+                ContentView()
+            }
         }
     }
 }
